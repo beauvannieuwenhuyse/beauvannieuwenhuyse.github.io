@@ -1,0 +1,24 @@
+body{
+    font-family: Verdana;
+    font-size: 1.1em;
+    background-color: #8D99AE;
+    color: #2B2D42;
+}
+
+h1{
+    font-variant: all-petite-caps;
+    background-color: #EF233C;
+}
+
+a:hover{
+    border: 4px dotted black;
+}
+a{
+    background: url('../img/favicon-16x16.png') no-repeat left center;
+    padding-left: 15px;
+}
+
+
+.stippelrand{
+    border: 1px dotted black;
+}
