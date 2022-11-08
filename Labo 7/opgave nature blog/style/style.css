@@ -1,0 +1,38 @@
+.wrap{
+    margin: auto;
+    width: 1200px;
+}
+.hero{
+    background-image: url("../img/header.jpg");
+    padding: 10px 0px 50px 15px;
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+}
+nav{
+    background-color: dimgray;
+    padding: 5px 5px 5px 5px;
+}
+
+nav > a {
+    color: greenyellow;
+}
+
+article > header {
+    font-weight: bold;
+    font-size: 1.8em;
+    text-decoration: underline;
+}
+article{
+    background-color: lightgray;
+    padding: 10px 5px 10px 5px;
+    margin: 10px 10px 0px 10px;
+}
+
+a{
+    color: dodgerblue;
+    font-weight: bold;
+}
+footer{
+    margin-top: 10px;
+}

@@ -29,19 +29,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/github_files/beauvannieuwenhuyse.github.io/Labo 7/persoonlijke website/img",
+    "list.type.of.created.stylesheet": "CSS",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\github_files\beauvannieuwenhuyse.github.io\Labo 7\persoonlijke website\img" />
+      <recent name="D:\github_files\beauvannieuwenhuyse.github.io\Labo 7\persoonlijke website" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\github_files\beauvannieuwenhuyse.github.io\Labo 7\opgave nature blog\img" />
+      <recent name="D:\github_files\beauvannieuwenhuyse.github.io\Labo 7\opgave nature blog\style" />
       <recent name="D:\github_files\beauvannieuwenhuyse.github.io\Labo 6\Opdrachten" />
       <recent name="D:\github_files\beauvannieuwenhuyse.github.io\Labo 5\style" />
       <recent name="D:\github_files\beauvannieuwenhuyse.github.io\Labo 6\Opdrachten\Style" />
@@ -57,7 +64,7 @@
       <updated>1666948028663</updated>
       <workItem from="1666948031197" duration="2913000" />
       <workItem from="1666951005347" duration="3673000" />
-      <workItem from="1667909059338" duration="2300000" />
+      <workItem from="1667909059338" duration="4915000" />
     </task>
     <servers />
   </component>
