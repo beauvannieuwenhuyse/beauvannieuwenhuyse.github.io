@@ -29,32 +29,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/github_files/beauvannieuwenhuyse.github.io&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/github_files/beauvannieuwenhuyse.github.io/Labo 10/Kunst oefening",
+    "list.type.of.created.stylesheet": "CSS",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\github_files\beauvannieuwenhuyse.github.io\Labo 10\Kunst oefening" />
+      <recent name="D:\github_files\beauvannieuwenhuyse.github.io\Labo 10\Oefening 2" />
       <recent name="D:\github_files\beauvannieuwenhuyse.github.io\Labo 7" />
       <recent name="D:\github_files\beauvannieuwenhuyse.github.io\Labo 6\Opdrachten" />
       <recent name="D:\github_files\beauvannieuwenhuyse.github.io\Labo 6" />
-      <recent name="D:\github_files\beauvannieuwenhuyse.github.io\Labo 5" />
-      <recent name="D:\github_files\beauvannieuwenhuyse.github.io\Labo 4" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\github_files\beauvannieuwenhuyse.github.io\Labo 10\Portolio" />
       <recent name="D:\github_files\beauvannieuwenhuyse.github.io\Labo 9\opdracht airbus(1)\opdracht airbus" />
       <recent name="D:\github_files\beauvannieuwenhuyse.github.io\Labo 9\Positioneren\demonstration pitfalls of inline-block element" />
       <recent name="D:\github_files\beauvannieuwenhuyse.github.io\Labo 5\opdracht 1" />
       <recent name="D:\github_files\beauvannieuwenhuyse.github.io\Labo 4\personal_homepage" />
-      <recent name="D:\github_files\beauvannieuwenhuyse.github.io\Labo 7\opgave nature blog\img" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -73,7 +73,8 @@
       <workItem from="1669376543797" duration="660000" />
       <workItem from="1669809783499" duration="2670000" />
       <workItem from="1669975546913" duration="6645000" />
-      <workItem from="1670580639138" duration="191000" />
+      <workItem from="1670580639138" duration="6067000" />
+      <workItem from="1670695698046" duration="3107000" />
     </task>
     <servers />
   </component>
