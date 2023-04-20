@@ -1,0 +1,18 @@
+body{
+    margin: auto 0%;
+    padding: 0%;
+}
+.darkgrey{
+    background-color: #444444;
+
+}
+.grey{
+    background-color: darkgray;
+
+}
+div[class*='col']{
+    height: 200px;
+    border: white 10px solid;
+    box-sizing: border-box;
+}
+

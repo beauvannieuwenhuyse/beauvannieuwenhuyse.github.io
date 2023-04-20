@@ -1,0 +1,25 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>Demonstratie slider</title>
+	<script type="text/javascript" charset="utf-8" src="scripts/code.js"></script>
+	<link rel="stylesheet" href="styles/styles.css"/>
+</head> 
+<body> 
+<section>
+	<p>Open het console venster, versleep daarna de slider hieronder en kijk welke berichten er komen</p>
+	<input type="range" id="red" class="slider" value="50" min="0" max="255" /><span id="waarderood">0</span> <br>
+	<input type="range" id="green" class="slider" value="50" min="0" max="255" /><span id="waardegroen">0</span><br>
+	<input type="range" id="blue" class="slider" value="50" min="0" max="255" /><span id="waardeblauw">0</span><br>
+	<button id="btnSave">Save</button>
+</section>
+<section>
+<p>Een gekleurd blokje :</p>
+<div class="swatch" id="swatch">
+</div>
+	<div id="swatchComponents">
+
+	</div>
+</section>
+</body> 
+</html> 
