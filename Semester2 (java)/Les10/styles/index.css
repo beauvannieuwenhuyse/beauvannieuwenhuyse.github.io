@@ -1,8 +1,27 @@
 .blok{
     margin-top: 25px;
+    color: white;
 }
 
 .bodystyle{
     background-color: grey !important;
+    width: 18rem;
+}
+
+.google{
+    background-color: #4285f4 !important;
+    width: 18rem;
+}
+
+.youtube{
+    background-color: red !important;
+    width: 18rem;
+}
+.twitter{
+    background-color: #1da1f2 !important;
+    width: 18rem;
+}
+.instagram{
+    background-color: #c32aa3 !important;
     width: 18rem;
 }

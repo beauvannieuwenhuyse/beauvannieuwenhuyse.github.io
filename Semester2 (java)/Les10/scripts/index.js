@@ -1,101 +1,157 @@
+let global = {
+    zoekblokken: [],
+}
+
 const setup = () => {
-	// deze code wordt pas uitgevoerd als de pagina volledig is ingeladen
-    let button = document.getElementById("btnGo")
-    button.addEventListener("click",Controle)
+    let btnGo = document.getElementById("btnGo")
+    btnGo.addEventListener("click", valideer)
+    restorezoekblokken()
 }
 
 
-const Controle = () => {
-let string = document.getElementById("commandoInput").value
-    let stringprefix = string.substring(0,2)
-    console.log(stringprefix)
-const prefix = ["/g", "/y","/t", "/i"]
-    if (string.includes("/")){
-       if (prefix.includes(stringprefix)){
-           onSubmit(string);
 
-       } else   {
-           alert("dit is geen correcte prefix")
-       }
+const valideer = () => {
+    let zoekwaarde = document.getElementById("commandoInput").value
+    let zoekprefix = zoekwaarde.substring(0,2)
+    let zoekwoord = zoekwaarde.substring(2)
+    const prefix = ["/g", "/y", "/i" , "/t"]
+    if (zoekwaarde.includes("/")){
+        if (prefix.includes(zoekprefix)){
+            console.log("alles ok")
+            zoek(zoekwaarde,prefix,zoekprefix,zoekwoord)
+        } else {
+            alert("geen correcte start")
+        }
     } else {
-        alert("dit is geen correct commando")
+        alert("geen /")
     }
+
 }
 
-
-
-const onSubmit = (string) => {
-    console.log("onsubmit methode")
-    let prefix = string.substring(0, 2)
-    let searchValue = string.substring(2)
-    console.log(string)
-    console.log(prefix + "test prefix")
-    console.log(searchValue)
-
-    if (prefix.includes("/g")) {
-        let zoek = `https://www.google.com/search?q=${searchValue}`
+const zoek = (zoekwaarde,prefix,zoekprefix,zoekwoord) => {
+    if (zoekprefix == "/g"){
+        let zoek = `https://www.google.com/search?q=${zoekwoord}`
         let rest = findTitel(zoek)
         window.open(zoek);
 
-        kaartAanmaken(searchValue,rest,zoek);
+        kaartAanmaken(zoekwoord,rest,zoek);
+        storeLink(zoekwoord,rest,zoek)
     }
-    if (prefix.includes("/y")) {
-        let link = `https://www.youtube.com/search?q=${searchValue}`
-        window.open(link);
+
+    if (zoekprefix == "/y"){
+        let zoek = `https://www.youtube.com/search?q=${zoekwoord}`
+        let rest = findTitel(zoek)
+        window.open(zoek);
+
+        kaartAanmaken(zoekwoord,rest,zoek);
+        storeLink(zoekwoord,rest,zoek)
     }
-    if (prefix.includes("/t")) {
-        let link =`https://twitter.com/search?q=${searchValue}`
-        window.open(link);
+
+    if (zoekprefix == "/t"){
+        let zoek = `https://www.twitter.com/search?q=${zoekwoord}`
+        let rest = findTitel(zoek)
+        window.open(zoek);
+
+        kaartAanmaken(zoekwoord,rest,zoek);
+        storeLink(zoekwoord,rest,zoek)
     }
-    if (prefix.includes("/i")) {
-        let link = `https://www.instagram.com/search?q=${searchValue}`
-        window.open(link);
+
+    if (zoekprefix == "/i"){
+        let zoek = `https://www.instagram.com/search?q=${zoekwoord}`
+        let rest = findTitel(zoek)
+        window.open(zoek);
+
+        kaartAanmaken(zoekwoord,rest,zoek);
+        storeLink(zoekwoord,rest,zoek)
     }
+
+
 }
 
-const findTitel = (link) =>{
-    let snijpunt1 = link.indexOf(".")
-    let stuk = link.substring(snijpunt1+1)
-    let snijpunt2 = stuk.indexOf(".")
-    let rest = stuk.substring(0,snijpunt2)
-    console.log(stuk)
-    console.log(rest)
-    return rest
+const findTitel = (zoek) => {
+    let snijpunt1 = zoek.indexOf(".")
+    let substr1 = zoek.substring(snijpunt1+1)
+    let snijpunt2 = substr1.indexOf(".")
+    let titel = substr1.substring(0,snijpunt2)
+    return titel
+}
+
+const kaartAanmaken = (searchValue,rest,zoek) => {
+    let rij = document.getElementById("row")
+    let blok = document.createElement("div")
+    let card = document.createElement("div")
+    let body = document.createElement("div")
+    rij.appendChild(blok)
+    blok.className= "col-4"
+    blok.classList.add("blok")
+    blok.appendChild(card)
+    card.className = "card"
+    card.classList.add(rest)
+    card.appendChild(body)
+    body.className = "card-body"
+    let titel = document.createElement("h5")
+    titel.className = "card-title"
+    titel.innerText= rest
+    body.appendChild(titel)
+    let tekst = document.createElement("p")
+    body.appendChild(tekst)
+    tekst.className = searchValue
+    tekst.innerText= searchValue
+    let link = document.createElement("a")
+    link.className = "btn btn-primary"
+    link.href = zoek
+    link.target = "_blank"
+    link.innerText = "dit is een link"
+    body.appendChild(link)
 
 
 
 }
 
- const kaartAanmaken = (searchValue,rest,zoek) => {
-        let rij = document.getElementById("row")
-        let blok = document.createElement("div")
-        let card = document.createElement("div")
-        let body = document.createElement("div")
-        rij.appendChild(blok)
-        blok.className= "col-4"
-        blok.classList.add("blok")
-        blok.appendChild(card)
-        card.className = "card"
-        card.classList.add("bodystyle")
-        body.className = "card-body"
-        card.appendChild(body)
-        let titel = document.createElement("h5")
-            titel.className = "card-title"
-            titel.innerText= rest
-        body.appendChild(titel)
-        let tekst = document.createElement("p")
-         tekst.className = searchValue
-         body.appendChild(tekst)
-         let link = document.createElement("a")
-         link.className = "btn btn-primary"
-         link.href = zoek
-         link.innerText = "dit is een link"
-        body.appendChild(link)
 
 
- }
+const storeLink = (searchValue,rest,zoek) => {
+    let zoekblok = {}; // een leeg object
+    zoekblok.searchValue = searchValue;
+    zoekblok.rest = rest;
+    zoekblok.zoek = zoek;
+    global.zoekblokken.push(zoekblok)
+
+
+    let settingsJSON;
+
+    // bouw settings object op basis van ingevulde gegevens
+    // eigenlijk zouden we hier ook inputvalidering moeten doen
+
+    settingsJSON = JSON.stringify((global.zoekblokken))
+    localStorage.setItem("VIVES.be.zoekblokken", settingsJSON)
+
+}
+
+const restorezoekblokken = () => {
+    let settings=[];
+    let settingsJSON = localStorage.getItem("VIVES.be.zoekblokken")
+
+    // Maak een leeg settings object, of bouw het op basis
+    // van de settings JSON string in local storage
+    if (settingsJSON == undefined) {
+        settings = {
+        };
+    } else {
+        settings = JSON.parse((settingsJSON))
+    }
+
+    // vul de invoervelden met de settings-waarden
+    for(let i=0; i<settings.length; i++){
+        zoekblok = settings[i];
+        kaartAanmaken(zoekblok.searchValue, zoekblok.rest, zoekblok.zoek)
+        global.zoekblokken.push(zoekblok)
+    }
+
+    console.log(settings)
+};
 
 
 
 
-window.addEventListener("load", setup);
+window.addEventListener('load', setup);
