@@ -2,10 +2,49 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>webdevelopment</title>
+    <title>Webdevelopment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .links a {
+            text-decoration: none;
+            color: white;
+            background-color: #007BFF;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 18px;
+            transition: background-color 0.3s;
+            text-align: center;
+        }
+        .links a:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-<p><a href="Semester1/index.html">Semester1 </a></p>
-<p><a href="Semester2%20(java)/index.html">Semester2 </a></p>
+
+    <h1>Webdevelopment</h1>
+    <div class="links">
+        <a href="Semester1/index.html">Semester 1</a>
+        <a href="Semester2%20(java)/index.html">Semester 2</a>
+    </div>
+
 </body>
 </html>
